@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seruni Sekarayu Kusumawardhani</title>
+<meta name="description" content="Portofolio Seruni Sekarayu Kusumawardhani — mahasiswi Statistika Universitas Brawijaya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --ink:#111111;
+  --muted:#767676;
+  --line:#E7E7E7;
+  --soft:#F5F5F5;
+  --maxw:920px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter Tight",-apple-system,Segoe UI,Arial,sans-serif;
+  font-size:16px;line-height:1.7;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-weight:600;letter-spacing:-.02em;line-height:1.15;margin:0}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:1.5px solid var(--ink);outline-offset:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+nav .mark{font-weight:500;font-size:15px;text-decoration:none}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+nav ul a{font-size:14px;color:var(--muted);text-decoration:none}
+nav ul a:hover{color:var(--ink)}
+#lang{font-family:inherit;font-size:13px;font-weight:500;background:none;border:1px solid var(--line);color:var(--ink);border-radius:2px;padding:5px 11px;cursor:pointer}
+#lang:hover{border-color:var(--ink)}
+@media(max-width:720px){nav ul{display:none}}
+
+header{padding:72px 0 88px}
+.hero{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center}
+.role{font-size:14px;color:var(--muted);margin:0 0 20px}
+h1{font-size:clamp(32px,5.2vw,50px);margin-bottom:22px}
+.lede{font-size:18px;color:var(--muted);max-width:52ch;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font-size:14px;font-weight:500;text-decoration:none;padding:10px 18px;border-radius:2px;display:inline-block}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-line{border:1px solid var(--line)}
+.btn-line:hover{border-color:var(--ink)}
+.photo{aspect-ratio:1/1;background:var(--soft);border:1px solid var(--line);border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo span{font-size:13px;color:var(--muted);text-align:center;padding:0 16px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:36px}.photo{max-width:240px}header{padding:48px 0 60px}}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sec{display:grid;grid-template-columns:160px 1fr;gap:40px;align-items:start}
+.sec h2{font-size:14px;font-weight:500;color:var(--muted);letter-spacing:0;padding-top:4px}
+.col{max-width:62ch}
+.col p{margin:0 0 18px}
+.col p:last-child{margin-bottom:0}
+@media(max-width:820px){.sec{grid-template-columns:1fr;gap:18px}section{padding:44px 0}}
+
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:14px 0;border-top:1px solid var(--line)}
+.rows li:first-child{border-top:0;padding-top:0}
+.rows .k{font-size:14px;color:var(--muted)}
+.rows .v{font-size:15px}
+@media(max-width:560px){.rows li{grid-template-columns:1fr;gap:4px}}
+
+.proj{padding:22px 0;border-top:1px solid var(--line)}
+.proj:first-child{border-top:0;padding-top:0}
+.proj .kicker{font-size:13px;color:var(--muted);margin:0 0 6px}
+.proj h3{font-size:19px;margin-bottom:8px}
+.proj p{margin:0 0 10px;color:var(--muted)}
+.stack{font-size:13.5px;color:var(--muted)}
+
+footer{padding:32px 0 60px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top">Seruni Sekarayu</a>
+    <ul>
+      <li><a href="#tentang" data-id="Tentang" data-en="About">Tentang</a></li>
+      <li><a href="#keahlian" data-id="Keahlian" data-en="Skills">Keahlian</a></li>
+      <li><a href="#proyek" data-id="Proyek" data-en="Projects">Proyek</a></li>
+      <li><a href="#kontak" data-id="Kontak" data-en="Contact">Kontak</a></li>
+    </ul>
+    <button id="lang" aria-label="Ganti bahasa">EN</button>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="role" data-id="Junior Software Engineer (AI-Assisted)" data-en="Junior Software Engineer (AI-Assisted)">Junior Software Engineer (AI-Assisted)</p>
+      <h1>Seruni Sekarayu Kusumawardhani</h1>
+      <p class="lede" data-id="Mahasiswi Statistika Universitas Brawijaya. Saya mengolah data menjadi keputusan, lalu membangun produk yang memakainya." data-en="Statistics student at Universitas Brawijaya. I turn data into decisions, then build products that use them.">Mahasiswi Statistika Universitas Brawijaya. Saya mengolah data menjadi keputusan, lalu membangun produk yang memakainya.</p>
+      <div class="cta">
+        <a class="btn btn-solid" href="#proyek" data-id="Lihat proyek" data-en="See projects">Lihat proyek</a>
+        <a class="btn btn-line" href="mailto:serunisekarayu@yahoo.com" data-id="Kirim email" data-en="Send email">Kirim email</a>
+      </div>
+    </div>
+
+    <!-- Ganti src dengan foto 9:16 -->
+  <figure class="photo" style="margin:0">
+  <img src="foto-runi.jpg" alt="Seruni Sekarayu Kusumawardhani">
+</figure>
+  </div>
+</header>
+
+<section id="tentang">
+  <div class="wrap sec">
+    <h2 data-id="Tentang" data-en="About">Tentang</h2>
+    <div class="col">
+      <p data-id="Saya mahasiswi Statistika di Universitas Brawijaya. Sehari-hari saya bekerja dari data mentah: membersihkan CSV, menyusun basis data, menguji model di RStudio dan Gretl, lalu menyajikan hasilnya supaya orang non-teknis paham." data-en="I study Statistics at Universitas Brawijaya. Day to day I work from raw data: cleaning CSVs, structuring databases, testing models in RStudio and Gretl, then presenting results so non-technical people understand them.">Saya mahasiswi Statistika di Universitas Brawijaya. Sehari-hari saya bekerja dari data mentah: membersihkan CSV, menyusun basis data, menguji model di RStudio dan Gretl, lalu menyajikan hasilnya supaya orang non-teknis paham.</p>
+      <p data-id="Kebiasaan itu terbawa ke pengembangan perangkat lunak. Saya memakai AI sebagai rekan kerja untuk menulis dan memperbaiki kode lebih cepat, sambil tetap menguji sendiri hasilnya sebelum dipakai." data-en="That habit carries into software work. I use AI as a working partner to write and fix code faster, while still verifying every result myself before it ships.">Kebiasaan itu terbawa ke pengembangan perangkat lunak. Saya memakai AI sebagai rekan kerja untuk menulis dan memperbaiki kode lebih cepat, sambil tetap menguji sendiri hasilnya sebelum dipakai.</p>
+      <p data-id="Sekarang saya mencari peran Junior Software Engineer (AI-Assisted) di tim yang menghargai ketelitian data dan kemauan belajar cepat." data-en="I am now looking for a Junior Software Engineer (AI-Assisted) role on a team that values data rigour and fast learning.">Sekarang saya mencari peran Junior Software Engineer (AI-Assisted) di tim yang menghargai ketelitian data dan kemauan belajar cepat.</p>
+    </div>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap sec">
+    <h2 data-id="Keahlian" data-en="Skills">Keahlian</h2>
+    <ul class="rows">
+      <li><span class="k" data-id="Analisis data" data-en="Data analysis">Analisis data</span><span class="v">RStudio, Gretl, Jamovi, Python</span></li>
+      <li><span class="k" data-id="Basis data" data-en="Databases">Basis data</span><span class="v" data-id="MySQL, kueri SQL, pengolahan CSV" data-en="MySQL, SQL queries, CSV processing">MySQL, kueri SQL, pengolahan CSV</span></li>
+      <li><span class="k">Web</span><span class="v">HTML, CSS, JavaScript</span></li>
+      <li><span class="k" data-id="Cara kerja" data-en="Ways of working">Cara kerja</span><span class="v" data-id="AI-assisted coding, Notion, kerja tim, dokumentasi" data-en="AI-assisted coding, Notion, teamwork, documentation">AI-assisted coding, Notion, kerja tim, dokumentasi</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="proyek">
+  <div class="wrap sec">
+    <h2 data-id="Proyek" data-en="Projects">Proyek</h2>
+    <div>
+
+      <!-- Proyek Tanya PICAN -->
+      <article class="proj">
+        <p class="kicker" data-id="KKN — proyek tim" data-en="Community service — team project">KKN — proyek tim</p>
+        <h3 data-id="Chatbot layanan informasi (Tanya PICAN)" data-en="Information service chatbot (Tanya PICAN)">Chatbot layanan informasi (Tanya PICAN)</h3>
+        
+        <div style="margin: 14px 0; border: 1px solid var(--line); border-radius: 4px; overflow: hidden;">
+          <img src="TANYA PICAN.png" alt="Preview Chatbot Tanya PICAN Kelurahan Pisang Candi" style="width: 100%; height: auto; display: block;">
+        </div>
+
+        <p data-id="Chatbot yang menjawab pertanyaan warga tanpa harus menunggu petugas. Saya menyusun alur percakapan dan merapikan kumpulan pertanyaan menjadi data terstruktur." data-en="A chatbot answering residents' questions without waiting for an officer. I designed the conversation flow and turned the question set into structured data.">Chatbot yang menjawab pertanyaan warga tanpa harus menunggu petugas. Saya menyusun alur percakapan dan merapikan kumpulan pertanyaan menjadi data terstruktur.</p>
+        <p class="stack" data-id="Chatbot, dataset, kerja tim" data-en="Chatbot, dataset, teamwork">Chatbot, dataset, kerja tim</p>
+        
+        <p style="margin-top: 10px;">
+          <a href="https://kelpisangcandi.malangkota.go.id" target="_blank" rel="noopener" style="font-size: 13.5px; text-decoration: underline;">Buka website Tanya PICAN &rarr;</a>
+        </p>
+      </article>
+
+      <!-- Proyek MoodRy -->
+      <article class="proj">
+        <p class="kicker" data-id="Proyek pribadi" data-en="Personal project">Proyek pribadi</p>
+        <h3 data-id="Layanan rekomendasi berbasis suasana hati (MoodRy)" data-en="Mood-based recommendation service (MoodRy)">Layanan rekomendasi berbasis suasana hati (MoodRy)</h3>
+        
+        <div style="margin: 14px 0; border: 1px solid var(--line); border-radius: 4px; overflow: hidden;">
+          <img src="MOODRY.png" alt="Preview MoodRy" style="width: 100%; height: auto; display: block;">
+        </div>
+
+        <p data-id="Aplikasi web yang memberikan rekomendasi konten atau musik berdasarkan suasana hati pengguna." data-en="A web application that provides content or music recommendations based on the user's mood.">Aplikasi web yang memberikan rekomendasi konten atau musik berdasarkan suasana hati pengguna.</p>
+        <p class="stack" data-id="HTML, CSS, JavaScript" data-en="HTML, CSS, JavaScript">HTML, CSS, JavaScript</p>
+        
+        <p style="margin-top: 10px;">
+          <a href="https://github.com/serunisekarayu-max/moodry" target="_blank" rel="noopener" style="font-size: 13.5px; text-decoration: underline;" data-id="Lihat Kode &rarr;" data-en="View Code &rarr;">Lihat Kode &rarr;</a>
+        </p>
+      </article>
+      
+
+      <!-- Proyek Ucapan Ulang Tahun -->
+      <article class="proj">
+        <p class="kicker" data-id="Proyek pribadi" data-en="Personal project">Proyek pribadi</p>
+        <h3 data-id="Website ucapan ulang tahun" data-en="Birthday greeting website">Website ucapan ulang tahun</h3>
+        <p data-id="Halaman ucapan yang isinya dibaca dari berkas CSV, jadi satu template bisa dipakai ulang untuk banyak nama tanpa mengubah kode." data-en="A greeting page whose content is read from a CSV file, so one template serves many names without touching the code.">Halaman ucapan yang isinya dibaca dari berkas CSV, jadi satu template bisa dipakai ulang untuk banyak nama tanpa mengubah kode.</p>
+        <p class="stack">HTML, CSS, CSV</p>
+      </article>
+
+
+      <!-- Proyek Analisis Data -->
+      <article class="proj">
+        <p class="kicker" data-id="Tugas kampus" data-en="Coursework">Tugas kampus</p>
+        <h3 data-id="Analisis data kuantitatif" data-en="Quantitative data analysis">Analisis data kuantitatif</h3>
+        <p data-id="Uji hipotesis dan regresi di Gretl dan Jamovi, pembersihan data di RStudio, serta perancangan basis data MySQL beserta kuerinya." data-en="Hypothesis testing and regression in Gretl and Jamovi, data cleaning in RStudio, plus MySQL schema design and queries.">Uji hipotesis dan regresi di Gretl dan Jamovi, pembersihan data di RStudio, serta perancangan basis data MySQL beserta kuerinya.</p>
+        <p class="stack">RStudio, Gretl, Jamovi, MySQL</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="wrap sec">
+    <h2 data-id="Kontak" data-en="Contact">Kontak</h2>
+    <div>
+      <p style="margin:0 0 22px;color:var(--muted);max-width:52ch" data-id="Terbuka untuk peran junior, magang, dan proyek lepas." data-en="Open to junior roles, internships, and freelance work.">Terbuka untuk peran junior, magang, dan proyek lepas.</p>
+      <ul class="rows">
+        <li><span class="k">Email</span><span class="v"><a href="mailto:serunisekarayu@yahoo.com">serunisekarayu@yahoo.com</a></span></li>
+        <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/serunisekarayu-max" target="_blank" rel="noopener">github.com/serunisekarayu-max</a></span></li>
+        <li><span class="k" data-id="Lokasi" data-en="Location">Lokasi</span><span class="v" data-id="Malang, Jawa Timur" data-en="Malang, East Java, Indonesia">Malang, Jawa Timur</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Seruni Sekarayu Kusumawardhani</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('lang'),lang='id';
+  btn.addEventListener('click',function(){
+    lang=lang==='id'?'en':'id';
+    document.documentElement.lang=lang;
+    btn.textContent=lang==='id'?'EN':'ID';
+    document.querySelectorAll('[data-id][data-en]').forEach(function(el){
+      el.textContent=el.getAttribute('data-'+lang);
+    });
+  });
+})();
+</script>
+</body>
+</html>
